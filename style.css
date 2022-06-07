@@ -10,14 +10,17 @@ div {
 
 .head {
   background-color: #CD5C5C;
-  min-height: 150px;
-  max-height: 150px;
+  min-height: 100px;
+  max-height: 100px;
 }
 
 .nav {
   background-color: #7FFF00;
+  position: sticky;
+  top: 0;
   min-height: 50px;
   margin-top: 10px;
+
 }
 
 .sale {
@@ -30,9 +33,9 @@ div {
   background-color: #00FA9A;
   margin-top: 15px;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  padding: 5px 5px 5px 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .item {
@@ -41,7 +44,41 @@ div {
   max-height: 200px;
   min-width: 380px;
   min-height: 200px;
-  margin: 10px;
+}
+
+.benefits {
+  background-color: #CD5C5C;
+  min-height: 400px;
+  margin-top: 15px;
+}
+
+.map-mail {
+  background-color: #0000FF;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  padding: 20px 20px 20px 20px;
+  min-height: 400px;
+  margin-top: 15px;
+}
+
+.map {
+  background-color: #008080;
+  min-height: 180px;
+  margin-right: 5px;
+  grid-column-start: 1;
+}
+
+.mail {
+  background-color: #00FFFF;
+  min-height: 180px;
+  margin-left: 5px;
+  grid-column-start: 2;
+}
+
+.reviews {
+  background-color: #556B2F;
+  min-height: 400px;
+  margin-top: 15px;
 }
 
 .footer {
