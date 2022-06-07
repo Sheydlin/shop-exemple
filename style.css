@@ -1,3 +1,12 @@
+b {
+  font-size: 26px;
+}
+
+div {
+  text-align: center;
+  line-height: 100px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,8 +17,10 @@ body {
   background-attachment: fixed;
 }
 
-div {
-
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+  margin: 0, 15px;
 }
 
 @media (max-width:1200px) {
@@ -28,12 +39,6 @@ div {
   .container {
     max-width: none;
   }
-}
-
-.container {
-  max-width: 990px;
-  margin: 0 auto;
-  margin: 0, 15px;
 }
 
 .head {
@@ -66,6 +71,20 @@ div {
 
 }
 
+@media (max-width:992px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width:767px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
 .item {
   background-color: #FF4500;
   min-height: 200px;
@@ -81,23 +100,34 @@ div {
   background-color: #0000FF;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px 20px 20px 20px;
+  grid-gap: 15px;
+  padding: 15px 15px 15px 15px;
   min-height: 400px;
   margin-top: 15px;
+}
+
+@media (max-width:992px) {
+  .map-mail {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:767px) {
+  .map-mail {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .map {
   background-color: #008080;
   min-height: 180px;
-  margin-right: 10px;
-  grid-column-start: 1;
 }
 
 .mail {
   background-color: #00FFFF;
   min-height: 180px;
-  margin-left: 10px;
-  grid-column-start: 2;
 }
 
 .reviews {
