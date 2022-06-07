@@ -103,15 +103,24 @@ body {
 }
 
 .iteminfo {
+  text-align: center;
   background-color: #FF00FF;
   grid-column: 1;
   grid-row: 1;
+  padding: 10px;
+}
+
+.piteminfo {
+  font-size: 22px;
+  text-shadow: 1px;
 }
 
 .price {
+  text-align: left;
   background-color: #6A5ACD;
   grid-column: 1;
   grid-row: 2;
+  padding-right: 10px;
 }
 
 .benefits {
