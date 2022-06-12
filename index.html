@@ -7,12 +7,28 @@
     <title>ShopExemple</title>
   </head>
   <body>
-    <div class="head">
-      <b>Head</b>
-    </div>
-    <div class="nav">
-      <b>Navigation</b>
-    </div>
+<div class="wrapper">
+  <header class="header">
+      <div class="container">
+        <div class="header_body">
+          <a href="#" class="header_logo">
+            <img src="logo.png " alt="">
+          </a>
+        <div class="header_burger">
+            <span></span>
+        </div>
+        <nav class="header_menu">
+          <ul class="header_list">
+            <li><a href="#" class="header_link">Главная</a></li>
+            <li><a href="#" class="header_link">Категории</a></li>
+            <li><a href="#" class="header_link">Отзывы</a></li>
+            <li><a href="#" class="header_link">Помощь</a></li>
+            <li><a href="#" class="header_link">Контакты</a></li>
+          </ul>
+        </nav>
+       </div>
+      </div>
+    </header>
   <div class="container">
     <div class="sale">
       <b>Sale</b>
@@ -20,26 +36,18 @@
      <div class="items">
        <div class="item">
          <div class="iteminfo">
-           <b>Item 1</b>
-           <p class="piteminfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-         </div>
-         <div class="price">
-           <b>999.9$</b>
-           <!-- <div class="buy">
-              <a href="#" class="abuy">Buy</a>
-           </div> -->
-         </div>
-         <div class="itemimg">
-           <img id="itemimg" src="tovar.jpg">
-         </div>
-       </div>
-       <div class="item">
-         <div class="iteminfo">
-           <b>Item 2</b>
-           <p class="piteminfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-         </div>
-           <div class="price">
-             <b>999.9$</b>
+           <div class="item-text">
+             <h6>Item 1</h6>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           </div>
+           <div class="item-price">
+             <div class="buy-button">
+               <button type="button" name="button">Buy</button>
+             </div>
+             <div class="price">
+               <p>$687</p>
+             </div>
+           </div>
          </div>
          <div class="itemimg">
            <img id="itemimg" src="tovar.jpg">
@@ -47,11 +55,18 @@
        </div>
        <div class="item">
          <div class="iteminfo">
-           <b>Item 3</b>
-           <p class="piteminfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-         </div>
-         <div class="price">
-           <b>999.9$</b>
+           <div class="item-text">
+             <h6>Item 2</h6>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           </div>
+           <div class="item-price">
+             <div class="buy-button">
+               <button type="button" name="button">Buy</button>
+             </div>
+             <div class="price">
+               <p>$687</p>
+             </div>
+           </div>
          </div>
          <div class="itemimg">
            <img id="itemimg" src="tovar.jpg">
@@ -59,11 +74,37 @@
        </div>
        <div class="item">
          <div class="iteminfo">
-           <b>Item 4</b>
-           <p class="piteminfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+           <div class="item-text">
+             <h6>Item 3</h6>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           </div>
+           <div class="item-price">
+             <div class="buy-button">
+               <button type="button" name="button">Buy</button>
+             </div>
+             <div class="price">
+               <p>$687</p>
+             </div>
+           </div>
          </div>
-         <div class="price">
-           <b>999.9$</b>
+         <div class="itemimg">
+           <img id="itemimg" src="tovar.jpg">
+         </div>
+       </div>
+       <div class="item">
+         <div class="iteminfo">
+           <div class="item-text">
+             <h6>Item 4</h6>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+           </div>
+           <div class="item-price">
+             <div class="buy-button">
+               <button type="button" name="button">Buy</button>
+             </div>
+             <div class="price">
+               <p>$687</p>
+             </div>
+           </div>
          </div>
          <div class="itemimg">
            <img id="itemimg" src="tovar.jpg">
@@ -86,7 +127,18 @@
     </div>
   </div>
     <div class="footer">
-      <b>Footer</b>
+      <div class="foot_info">
+        <b>Контакты</b>
+      </div>
+      <div class="foot_info">
+        <b>Полезные ссылки</b>
+      </div>
+      <div class="foot_info">
+        <b>Коллеги</b>
+      </div>
     </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
   </body>
 </html>
