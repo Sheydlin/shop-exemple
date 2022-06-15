@@ -10,6 +10,11 @@ html,body{
   font-family: Arial, "Helvetica heve", Helvetica, sans-serif;
 }
 
+body {
+  background: url(bgc.svg);
+  background-attachment: fixed;
+}
+
 .wrapper{
 
 }
@@ -223,14 +228,11 @@ html,body{
 }
 
 .items {
-  background-color: #00FA9A;
   margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
-  padding: 20px 20px 20px 20px;
-
 }
 
 @media (max-width:992px) {
@@ -252,7 +254,7 @@ html,body{
   min-height: 200px;
   max-height: 200px;
   display: flex;
-  overflow: hidden;
+  overflow: visible;
 }
 
 @media (max-width:992px) {
@@ -345,9 +347,23 @@ html,body{
   height: 200px;
 }
 
+.itemimg img {
+  transition: all 1s ease-out;
+-moz-transition: all 1s ease-out;
+-o-transition: all 1s ease-out;
+-webkit-transition: all 1s ease-out;
+}
+
+.itemimg img:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
 .benefits {
   background-color: #CD5C5C;
-  min-height: 400px;
+  min-height: 250px;
   margin-top: 15px;
 }
 
@@ -393,7 +409,7 @@ html,body{
 
 .footer {
   margin-top: 15px;
-  background-color: #FF00FF;
+  background-color: black;
   min-height: 200px;
   display: flex;
 }
